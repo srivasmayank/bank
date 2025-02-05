@@ -63,11 +63,11 @@ className="hidden md:block absolute inset-0 bg-cover bg-center h-full"  style={{
         <div className="w-full md:w-auto">
         <h2 className="text-2xl font-semibold text-green-900 mb-4">Welcome to Online Banking</h2>
 
-          <div className="bg-white p-6 px-8 rounded shadow-lg opacity-65">
+          <div className="bg-white p-6 px-8  md:shadow-lg md:opacity-65">
       <input
         type="text"
         placeholder="User name"
-        className="w-full p-4 border rounded mb-6"
+        className="w-full p-4 border border-gray-200 rounded mb-6"
       />
 
       {/* Password Input with Eye Icon */}
@@ -75,7 +75,7 @@ className="hidden md:block absolute inset-0 bg-cover bg-center h-full"  style={{
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Password"
-          className="w-full p-4 border rounded pr-12"
+          className="w-full p-4 px-6 border border-gray-200 rounded pr-12"
         />
         <button
           type="button"
@@ -91,7 +91,7 @@ className="hidden md:block absolute inset-0 bg-cover bg-center h-full"  style={{
         <label htmlFor="remember">Remember me</label>
       </div>
 
-      <button className="w-full bg-gray-400 text-white py-2 mb-4 rounded cursor-not-allowed">
+      <button className="w-full bg-gray-100 text-gray-400 py-2 mb-4 font-[600] rounded cursor-pointer border-2">
         Log in
       </button>
 

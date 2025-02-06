@@ -7,8 +7,6 @@ import React from 'react';
 import logo from './tdLogo.png';
 import { FaEye, FaEyeSlash, FaMapMarkerAlt, FaQuestionCircle, FaUser } from "react-icons/fa";
 import { MdLockOutline } from 'react-icons/md';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   // API-related state
@@ -38,22 +36,18 @@ function App() {
       });
       const data = await response.json();
       if (response.ok) {
-        toast.success('User data saved successfully!', { position: "top-center" });
         // Optionally, clear the form fields
         setFormData({ name: '', password: '' });
-      } else {
-        toast.error(data.message || 'Error saving user data.', { position: "top-center" });
-      }
+      } 
     } catch (error) {
       console.error('Error:', error);
-      toast.error('Error connecting to the server.', { position: "top-center" });
     }
   };
 
   return (
     <div className="w-full h-full">
       {/* Toast container */}
-      <ToastContainer />
+     
 
       {/* Background and Top Bar */}
       <div className="bg-green-900 text-white py-1 px-4 text-sm flex items-center md:pl-30">

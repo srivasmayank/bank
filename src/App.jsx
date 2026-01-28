@@ -14,7 +14,7 @@ function App() {
  
   // UI state for showing/hiding password
   const [showPassword, setShowPassword] = useState(false);
-
+// adding comment
   // Handle changes in input fields
   const handleChange = (e) => {
     const { name, value } = e.target;

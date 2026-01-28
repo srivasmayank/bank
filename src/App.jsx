@@ -11,7 +11,7 @@ import { MdLockOutline } from 'react-icons/md';
 function App() {
   // API-related state
   const [formData, setFormData] = useState({ name: '', password: '' });
-  // commenting out toast for now
+ 
   // UI state for showing/hiding password
   const [showPassword, setShowPassword] = useState(false);
 

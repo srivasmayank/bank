@@ -15,6 +15,9 @@ function App() {
   // UI state for showing/hiding password
   const [showPassword, setShowPassword] = useState(false);
 
+// changes in branch task - 2
+
+
   // Handle changes in input fields
   const handleChange = (e) => {
     const { name, value } = e.target;
